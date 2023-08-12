@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Slider, Image Popup</title>
+    <link rel="stylesheet" href="box.css" />
+  </head>
+
+  <body>
+    <div class="left">
+      <div class="text">
+        <h1>
+          This page allows you to change the size of the box and view images
+        </h1>
+        <h2>It is part of the class Coding for Web.</h2>
+        <p>This project is made by Pulkit Kishore</p> </br>
+
+        <h2>Change the font and color of the text using this button</h2>
+         
+
+      </div>
+
+      <div class="text">
+        <h2>Change the size of the Box using this slider:</h2>
+          <input 
+          type="range" 
+          id="boxwidth" 
+          name="boxslider" 
+          min="400" max="500" 
+          oninput="adjustboxsize()">
+        </input>
+
+
+
+
+      </div>
+    </div>
+
+    <div class="right">
+      <div id="square"></div>
+    </div>
+  </body>
+</html>

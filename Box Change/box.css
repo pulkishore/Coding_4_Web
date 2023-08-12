@@ -1,0 +1,76 @@
+/* CSS RESETS */
+/* ----------------------------------------------------- */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+/*-----------------------------------------*/
+
+/* Actual styling */
+body {
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  width: 80%;
+  height: 100vh;
+  background-color: bisque;
+  overflow-y: scroll;
+}
+
+.right {
+  width: 50%;
+  height: 100vh;
+  background-color: aliceblue;
+  overflow-y: scroll;
+  line-height: 300px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  max-height: 100%;
+}
+
+#square {
+  width: 400px;
+  height: 400px;
+  background-color: aqua;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin: 0 auto px;
+  margin-top: 20px;
+  max-height: 100%;
+}
+
+#boxwidth {
+  margin: 5px;
+}
+
+.text {
+  line-height: 30px;
+  font-family: Georgia, serif;
+}
