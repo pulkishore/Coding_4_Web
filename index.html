@@ -1,171 +1,54 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-
-    <!-- Insert relevant content inside the following meta tags-->
-    <meta name="author" content="Pulkit Kishore" />
-    <meta name="description" content="This is a Good Morning Message Maker" />
-    <meta property="og:title" content="Good Morning Message Maker" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
-      property="og:description"
-      content="This is a Good Morning Message Maker"
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
     />
+    <link rel="stylesheet" href="index styles.css" />
+    <script src= "index script.js"></script>
 
-    <title>Image Caption Maker</title>
-
-    <!-- No need to edit this-->
-    <meta name="keywords" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:type" content="website" />
-
-    <!-- Links to boilerplate CSS and JS files -- DO NOT CHANGE or EDIT THESE!!! -->
-    <link href="./template-files/style.css" rel="stylesheet" type="text/css" />
-    
-    <script
-      type="text/javascript"
-      src="./template-files/script.js"
-      defer
-    ></script>
-    <script 
-      type="text/javascript"
-      src="./template-files/html2canvas.js"
-      defer
-    ></script>
-
-    <!-- Links to YOUR CSS and JS files -->
-    <link id="mainStylesheet" rel="stylesheet" href="style-to-edit.css">
-    <script type="text/javascript" src="./script-to-edit.js" defer></script>
+    <title>Coding_4_Web</title>
   </head>
-
   <body>
-    <header>
-      <!--DO NOT EDIT THIS -->
-      <button id="openPopup" onclick="showPopup()">?</button>
-      <!--Insert your Names after the dash -->
-      <h1>  Image Caption Maker – Pulkit Kishore</h1>
-    </header>
-    <main>
-      <section id="input">
-        <label for="dropdown">Choose Image</label>  <br>
-        <select id="choice" onchange="chooseImage()" placeholder="Choose an Image" class="retro-select">
-          <option value="images/cloud.jpg">Grunge Cloud</option>
-          <option value="images/star.jpg">Star Background</option>
-          <option value="images/tv.jpg">Surreal TV</option>
-          <option value="images/manflower.jpg">Surreal Flowers</option>
-        </select>
-<br><br>
-        <div>
-            <label for="text1">Top Text:  </label> <br>
+    <h1 class="h1">Coding for Web</h1>
+<body style="background-color:white;">
 
-            <input type="text" id="primaryText" placeholder="Enter top text" oninput="topText()" class="retro-input"></br>
-            <label for="text2">Bottom Text:</label> <br>
-            <input 
-            type="text" 
-            id="secondaryText" 
-            placeholder="Enter bottom text" 
-            oninput="bottomText()" class="retro-input">
-        </div>
+<div  class = "navbar" id = "palette">
+  <a href="D4.A1_gm_message_maker/index.html  ">A1</a>
+  <a href="#A2">A2</a>
+    <a href="#A3">A3</a>
 
-      <br><br>
-
-
-        <fieldset>
-          <legend>Select Font Family </legend>
-
-
-          <label>
-            <input type="radio" 
-            name="fontfamily"
-            value = "cursive"
-            class="retro-radio"
-            onclick="fontChange()"> 
-            Cursive</label><br>
-           
-            
-          <label>
-            <input type="radio" 
-            name="fontfamily"
-            value = "serif"
-                        class="retro-radio"
-
-                        onclick="fontChange()"> Serif</label><br>
-
-            
-          <label>
-            <input type="radio" 
-            name="fontfamily"
-            value = "sans-serif"
-                        class="retro-radio"
-
-            onclick="fontChange()"> Sans-Serif</label><br>
-
-        </fieldset>
-      </br>
-
-
-        <label for="dropdown">Choose text color</label> 
-        <select id="textColor" onchange="chooseColor()" class="retro-select">
-          <option value="red">Red</option>
-          <option value="yellow">Yellow</option>
-          <option value="aliceblue">AliceBlue</option>
-          <option value="brown">Brown</option>
-          <option value="blue">Blue</option>
-          <option value="white">White</option>
-          <option value="black">Black</option>
-          <option value="grey">Grey</option>
-          <option value="bisque">Bisque</option>
-        </select>
-      <br><br>
-
-<label for= "slider">Change heading size</label>  <br>
-        <input type = "range" class = "retro-range" id ="slider" min = "16" max = "64" value = "32" oninput="changeSize()"/> <br> <br>
-
-<!--  -->
-
-
-
-        <label for= "weight">Change heading size</label>  <br>
-        <input  class="retro-input-number" type = "number" id = "weight" min = "1" max = "10" value = "1" oninput="changeWeight()"/>
-<br><br>
-
-<button id="styleToggle" class = "retro-button">Toggle Style</button>
-
-
-
-      </section>
-
-      <!-- Button to Save Image | DO NOT EDIT THIS -->
-      <button id="save-img">Save Image</button>
-
-      <section id="output">
-        <div id="output-canvas">
-            <img src ="" id="imagebox"></img>
-
-          <h1 id="text-1" class="text"></h2>
-          <h2 id="text-2" class="text"></h2>
-
-          <!-- Markup for your image and texts go inside this div -->
-          <!-- Use the ID "text-1" for Text 1 -->
-          <!-- Use the ID "text-2" for Text 2 -->
-        </div>
-      </section>
-    </main>
-
-    <!--DO NOT EDIT THIS DIV -->
-    <div id="popupCover" onclick="hidePopup()"></div>
-
-    <!-- 
-        Once you are done with your assignment, replace the instructions text inside the div with id "popup" with the following text: This tool was programmed by [insert names], as part of a unit titled 'Coding for the Web', facilitated during the 2023/24 odd semester at Srishti Manipal Institute. 
-    -->
-    <div id="popup">
-      <p>Coding for the Web '23/24 --- Assignment 1:</p>
-      <hr />
-      <p>
-       This page was made by Pulkit Kishore, 
-       as part of a unit titled 'Coding for the Web', 
-       facilitated during the 2023/24 odd semester at Srishti Manipal Institute.
-      <hr />
+  <div class="dropdown">
+    <button class="dropbtn">Classwork Exercises 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="splitscroll/splitscroll.html" target=”_blank” >Splitscreen</a>
+      <a href="D2.E1_css_selector_exercise/index.html" target=”_blank” >CSS Change</a>
+      <a href="bg picture/bg picture.html" target=”_blank” >Centered Image</a>
     </div>
-  </body>
+  </div> 
+</div>
+
+<h3>Click to change color palette:
+   <button onclick="changeColor()">
+    Change color palette
+   </button>
+</h3>
+
+<h3 id = "heading"> Click to access my Behance: 
+    <button id="behance">
+            <a href="https://www.behance.net/pulkishore/" target=”_blank” >
+              Profile Page
+            </a>
+    </button>
+</h3>
+  
+<p>Hover over the "Classwork Exercises" button in the navbar to see the dropdown menu.</p>
+
+</body>
 </html>
