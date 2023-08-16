@@ -51,6 +51,15 @@ function changeWeight() {
   w2.style.webkitTextStrokeWidth = wfont + "px";
 }
 
+function chooseStroke() {
+  let stroke = document.getElementById("textStroke").value;
+  let changedStroke1 = document.getElementById("text-1");
+  let changedStroke2 = document.getElementById("text-2");
+
+  changedStroke1.style.webkitTextStrokeColor = stroke;
+  changedStroke2.style.webkitTextStrokeColor = stroke;
+}
+
 const slider = document.getElementById("slider");
 const needle = document.querySelector(".needle");
 
