@@ -16,13 +16,6 @@ body {
   margin-top: 40px;
 }
 
-.h2 {
-  font-family: "VT323", monospace;
-  color: #b83a30;
-  text-align: center;
-  margin-top: 40px;
-}
-
 .navbar {
   text-align: center;
   margin-top: 20px;
@@ -67,7 +60,7 @@ button:hover,
 .dropbtn {
   font-size: 18px;
   background-color: #f8f8f8;
-  color: #3c2f23;
+  color: #d88c41;
   border: 2px solid #d88c41;
   border-radius: 4px;
   padding: 14px 16px;
