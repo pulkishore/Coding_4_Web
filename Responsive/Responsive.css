@@ -1,0 +1,18 @@
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  background-color: teal;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 12px;
+    background-color: beige;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  h1 {
+    font-size: 40px;
+  }
+}
