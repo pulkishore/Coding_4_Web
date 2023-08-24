@@ -1,0 +1,188 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #203d6c;
+  padding: 0x;
+  margin: 0;
+  height: auto;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  position: sticky;
+}
+
+#title {
+  font-family: "Pentay Slab";
+  font-size: 50px;
+  color: yellow;
+  padding: 1px;
+  letter-spacing: 5px;
+}
+
+#logo {
+  height: 60px;
+  padding: 0;
+  margin: 0px;
+}
+
+.header img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 10px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #e5e4e2;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pair {
+  display: flex;
+  gap: 5 px;
+  justify-content: CENTER;
+  width: 100%;
+}
+
+.image {
+  /* display: flex; */
+  flex-wrap: wrap;
+  justify-content: center;
+  /* padding-bottom: 5px; */
+}
+
+.sticker {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  justify-content: center;
+  padding: 5px;
+}
+#maths {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #e5e4e2;
+  border-radius: 10px;
+  margin-top: -10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#image1 {
+  max-width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.caption {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+}
+
+p {
+  font-weight: bold;
+}
+
+.right-caption {
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+.left-caption {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+/* 
+.container {
+  flex-basis: calc(33.33% - 10px);
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} */
+
+.grid {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+.column {
+  width: calc(33.33% - 10px);
+  margin-bottom: 1px;
+}
+
+.column img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 10px;
+  }
+
+  .column {
+    width: 48%;
+    /* Adjust the width as needed */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    padding: 5px;
+  }
+
+  .column {
+    width: 100%;
+  }
+}
+
+@font-face {
+  font-family: "Pentay Slab";
+  src: local("Pentay Slab Black"), local("Pentay-Slab-Black"),
+    url("PentayBlack.woff2") format("woff2"),
+    url("PentayBlack.woff") format("woff"),
+    url("PentayBlack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
