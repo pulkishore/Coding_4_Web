@@ -67,9 +67,9 @@ let movIndexData = [
     cost3: "16 / Bottle",
     cost4: "",
     cost5: "",
-    img1: "",
-    img2: "",
-    img3: "",
+    img1: "https://cdn1.edgedatg.com/aws/abc/blogs/blog-78436c3d-1014-4bd1-86af-1dd0fb91ac95_881x476.jpg",
+    img2: "https://www.bobbooks.co.uk/media/cache/photobook_turner/upload/photo-book-products/84081/811221-598069/0/8662793de93b4aaf988c1032c784deda_jpg_8b1a1914927870a63b9bbc5e3a4c1279.jpg",
+    img3: "https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Fgmh8t9wkr8j91.jpg",
     img4: "",
     img5: "",
     info1:
