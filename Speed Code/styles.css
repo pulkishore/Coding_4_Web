@@ -1,0 +1,17 @@
+#box1 {
+  background-color: #2ecc71;
+  width: 200px;
+  height: 200px;
+  display: none;
+}
+
+#box2 {
+  background-color: cyan;
+  width: 200px;
+  height: 200px;
+  display: none;
+}
+
+.layout {
+  display: flex;
+}
