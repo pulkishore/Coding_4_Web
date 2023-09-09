@@ -4,5 +4,5 @@ document.addEventListener("DOMContentLoaded", () => {
   // Remove the loader after 2 seconds
   setTimeout(() => {
     loaderIframe.style.display = "none";
-  }, 1000);
+  }, 12000);
 });
